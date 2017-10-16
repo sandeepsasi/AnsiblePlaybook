@@ -1,0 +1,8 @@
+ - name: SQL 
+   hosts: win_hosts
+   tasks: 
+     - name: R server - copy exe file  
+       win_copy: 
+         src: /usr/local/src/ansible/SQLEXPRADV_x64_ENU.exe 
+         dest:  c:\SQLEXPRADV_x64_ENU.exe
+         
